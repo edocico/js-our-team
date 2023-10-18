@@ -71,7 +71,7 @@ for (let key in team) {
     </figure>
     <div class="card-footer">
     <p class="member-name">${member.nome}</p>
-    <p class="member-role">${member.role}</p>
+    <p class="member-role">${member.ruolo}</p>
     </div>    
     </div>
     </div>`
