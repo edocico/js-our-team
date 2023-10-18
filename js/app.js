@@ -39,7 +39,7 @@ const team = [
         foto: 'barbara-ramos-graphic-designer.jpg',
     },
 ]
-
+// faccio il console log del team e di ogni suo membro
 console.log(team)
 // wayne barnett
 console.log(team[0])
@@ -53,9 +53,11 @@ console.log(team[3])
 console.log(team[4])
 // barbara ramos
 console.log(team[5])
-
-/* for (let key in team) {
+// ciclo l'array di oggetti stampando in console ogni membro del team e le sue proprietà
+for (let key in team) {
     console.log(key)
     const member = team[key]
-    console.log(member)
-} */
+    console.log(member.nome)
+    console.log(member.ruolo)
+    console.log(member.foto)
+} 
