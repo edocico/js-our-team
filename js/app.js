@@ -1,5 +1,8 @@
 console.log('ok!')
 
+ const appContainerDOMElement = document.querySelector('.container')
+ console.log(appContainerDOMElement)
+
 // creo l'array di oggetti team
 
 const team = [
@@ -60,4 +63,17 @@ for (let key in team) {
     console.log(member.nome)
     console.log(member.ruolo)
     console.log(member.foto)
+    // stampo nella pagina la card
+    let htmlColl = `<div class="col">
+    <div class="card">
+    <figure class="card-figure">
+    <img src="./img/${member.foto}" alt="">
+    </figure>
+    <div class="card-footer">
+    <p class="member-name">${member.nome}</p>
+    <p class="member-role">${member.role}</p>
+    </div>    
+    </div>
+    </div>`
+    appContainerDOMElement.innerHTML += htmlColl
 } 
