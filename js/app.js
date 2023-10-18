@@ -64,16 +64,17 @@ for (let key in team) {
     console.log(member.ruolo)
     console.log(member.foto)
     // stampo nella pagina la card
-    let htmlColl = `<div class="col">
-    <div class="card">
-    <figure class="card-figure">
-    <img src="./img/${member.foto}" alt="">
-    </figure>
-    <div class="card-footer">
-    <p class="member-name">${member.nome}</p>
-    <p class="member-role">${member.ruolo}</p>
-    </div>    
-    </div>
-    </div>`
+    let htmlColl = 
+    `<div class="col">
+        <div class="card">
+            <figure class="card-figure">
+                <img src="./img/${member.foto}" alt="">
+            </figure>
+            <div class="card-footer">
+                <p class="member-name">${member.nome}</p>
+                <p class="member-role">${member.ruolo}</p>
+            </div>    
+        </div>
+     </div>`
     appContainerDOMElement.innerHTML += htmlColl
 } 
